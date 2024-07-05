@@ -6,59 +6,60 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/slyle.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-
-<form name="registration" method="post" action="">
-    <div>
-    <a href ="#">
-        <img src="Images/X.svg" alt="cross">
+<div>
+    <a href="#" class="cross" >
+        <img src="images/X.svg" alt="cross">
     </a>
+</div>
+<div class="modal">
+    <div class="title">
+        <a href="#" title="Login">Login</a>
+        <span> | </span>
+        <a href="#" title="Register">Register</a>
     </div>
-    <div>
-        <label for="login">
-            <input name="login" type="radio" id="login" value="login">
-            Login
-        </label>
-        <label for="login_2">
-            <input name="login" type="radio" id="login_2" value="Register" checked>
-            Register
-        </label>
-    </div>
+
     <p class="text">
         Enter your email and password to register.
     </p>
-    <div>
-        <input name="username" type="text" placeholder="Username">
-    </div>
-    <div>
-        <input name="email" type="email" placeholder="Enter your email address">
-    </div>
-    <div>
-        <input name="password" type="password" placeholder="Password">
-    </div>
-    <div>
-        <input name="password" type="password" placeholder="Confirm Password">
-    </div>
-    <button type="submit">Register</button>
-    <p>
-        Or register with
-    </p>
-    <div>
-    <a href="https://accounts.google.com/signin" target="_blank">
-        <img src="Images/google.svg" alt="google">
-        Continue with Google
-    </a>
-    </div>
-    <div>
-        <a href="https://www.facebook.com/login" target="_blank">
-            <img src="Images/facebook.svg" alt="facebook">
-            Continue with Facebook
-        </a>
-    </div>
-</form>
 
+    <form name="registration" method="post" action="">
+        <div>
+            <label for="user_name"></label>
+            <input name="username" type="text" placeholder="Username" id="user_name" required>
+        </div>
+        <div>
+            <label for="user_email"></label>
+            <input name="email" type="email" placeholder="Enter your email address" id="user_email" required>
+        </div>
+        <div>
+            <label for="user_password"></label>
+            <input name="password" type="password" placeholder="Password" id="user_password">
+        </div>
+        <div>
+            <label for="user_password_confirmation"></label>
+            <input name="password" type="password" placeholder="Confirm Password" id="user_password_confirmation">
+        </div>
+        <button class="register_btn" type="submit">Register</button>
+        <div class="other_register">
+            <span class="grey-line"></span>
+            <p class="other_register_text" >Or register with</p>
+            <span class="grey-line"></span>
+        </div>
+            <a href="https://accounts.google.com/signin" class="social_media_link" target="_blank">
+                <img src="images/google.svg" alt="google">
+                Continue with Google
+            </a>
+
+            <a href="https://www.facebook.com/login" class="social_media_link" target="_blank">
+                <img src="images/facebook.svg" alt="facebook">
+                Continue with Facebook
+            </a>
+    </form>
+</div>
 </body>
 </html>
