@@ -279,7 +279,30 @@ h1 span{
 }
 
 .banner_img{
-    width: 507px;
-    height: 450px;
-
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
 }
+
+.banner_img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner_img .small_img {
+    position: absolute;
+    top: 298px;
+    left: 55px;
+    width: 27%;
+}
+
+.banner_img .big_img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
