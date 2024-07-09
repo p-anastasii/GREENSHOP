@@ -183,10 +183,13 @@ header{
     color: #3d3d3d;
 }
 
-.page_nav .nav{
+.page_nav li{
     margin-right: 50px;
 }
 
+.page_nav li:last-of-type{
+    margin-right: 0;
+}
 
 .page_nav a:hover{
     font-weight: 700;
@@ -220,10 +223,14 @@ header .container{
 .main_banner{
     max-width: 1200px;
     margin: auto;
-    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
-    padding-left: 40px;
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    padding-left: 40px;
+}
+
+.banner_content{
+    padding-top: 68px;
 }
 
 .banner_content h2{
@@ -235,11 +242,6 @@ header .container{
     color: #3d3d3d;
     margin-bottom: 7px;
 }
-
-.banner_content{
-    padding-top: 68px;
-    margin-right: 93px;
- }
 
 h1{
     font-weight: 900;
@@ -276,4 +278,8 @@ h1 span{
     padding: 10px 26px;
 }
 
+.banner_img{
+    width: 507px;
+    height: 450px;
 
+}
