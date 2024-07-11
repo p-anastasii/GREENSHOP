@@ -368,17 +368,22 @@ h1 span{
 .products{
     max-width: 1200px;
     margin: auto;
+    display: flex;
     justify-content: space-between;
 }
 
 .aside_bar{
-    max-width: 310px;
     background: #fbfbfb;
-    padding: 14px 189px 377px 18px;
+    padding-top: 14px;
+    padding-left: 18px;
+    margin-bottom: 377px;
 }
 
 .product_list{
     max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .categories{
@@ -412,11 +417,20 @@ h1 span{
     margin-top: 7px;
 }
 
-.sale_banner{
-    max-width: 310px;
-}
-
 .sale_banner img{
     display: block;
     width: 100%;
+}
+
+.aside_container{
+    max-width: 310px;
+}
+
+.product_sort{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_choose{
+    max-width: 840px;
 }
