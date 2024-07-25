@@ -472,6 +472,8 @@ h1 span{
 }
 
 .product_choose img{
+    width: 250px;
+    height: 250px;
     margin-bottom: 31px;
 }
 
@@ -490,7 +492,7 @@ h1 span{
     margin-right: 40px;
 }
 
-.product_sort li:first-of-type a{
+.product_sort ul a:hover {
     font-family: 'cera_round_pro_demobold', sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -546,7 +548,7 @@ h1 span{
     margin-right: 0;
 }
 
-.breadcrumbs ul li:first-child a{
+.breadcrumbs ul a:hover{
     font-family: 'cera_round_pro_demobold', sans-serif;
     background: #46a358;
     font-weight: 700;
