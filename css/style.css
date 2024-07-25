@@ -46,6 +46,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'cera_round_pro_demolight';
+    src: url('../fonts/ceraroundprodemo-light-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-light-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-light-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-light-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-light-webfont.svg#cera_round_pro_demolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -381,9 +394,7 @@ h1 span{
 
 .product_list{
     max-width: 840px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .categories{
@@ -429,8 +440,117 @@ h1 span{
 .product_sort{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 62px;
 }
 
 .product_choose{
-    max-width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.product_choose h3{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+}
+
+.product_choose article{
+    margin-bottom: 98px;
+}
+
+.product_choose p{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+
+.product_choose img{
+    margin-bottom: 31px;
+}
+
+.product_sort ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.product_sort ul a{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    margin-right: 40px;
+}
+
+.product_sort li:first-of-type a{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46a358;
+}
+
+.product_sort li:last-of-type a{
+    margin-right: 0;
+}
+.sort_by{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.sort_by:first-of-type p{
+    margin-right: 5px;
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+.breadcrumbs ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.breadcrumbs ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    font-family: 'cera_round_pro_demolight', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+.breadcrumbs li{
+    margin-right: 10px;
+}
+
+.breadcrumbs ul li:last-child{
+    margin-right: 0;
+}
+
+.breadcrumbs ul li:first-child a{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    background: #46a358;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
 }
