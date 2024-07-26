@@ -224,11 +224,11 @@
 .container{
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 12px;
 }
 
 header{
     padding-top: 31px;
+    margin-bottom: 12px;
 }
 
 .page_nav{
@@ -522,6 +522,7 @@ h1 span{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin-bottom: 94px;
 }
 
 .breadcrumbs ul a{
@@ -576,4 +577,158 @@ h1 span{
 
 .arrow a:hover::before{
     background-image: url("../images/arrow_right2.svg");
+}
+
+.summer_collection{
+    margin-bottom: 138px;
+}
+
+.summer_collection .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summer_collection .container article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 586px;
+    text-align: right;
+}
+
+.summer_collection article h3{
+    font-family: 'cera_round_pro_demoblack', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+
+.summer_collection article p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+.summer_collection article a {
+    font-family: 'cera_round_pro_demomedium', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    background: #46a358;
+    padding: 10px;
+}
+
+.summer_collection article a::after{
+    background-image: url("../images/arrow_right3.svg");
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    content: "";
+    margin-left: 2px;
+}
+
+.blog{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.card_collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card_collection article{
+    max-width: 268px;
+    text-align: left;
+    background-color: #fbfbfb;
+}
+
+.blog .container h2{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+
+.blog .container p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    margin-bottom: 35px;
+}
+
+.blog .card_collection p:first-of-type{
+    font-family: 'cera_round_pro_demomedium', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    margin-bottom: 4px;
+}
+
+.blog .card_collection h3{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    margin-bottom: 4px;
+}
+
+.blog .card_collection p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    margin-bottom: 9px;
+}
+
+.blog .card_collection a{
+    font-family: 'cera_round_pro_demomedium', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.blog .card_collection a::after{
+    background-image: url("../images/arrow_right4.svg");
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    content: "";
+    margin-left: 3px;
+}
+
+.card_collection .info{
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
