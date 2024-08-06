@@ -288,7 +288,7 @@ header{
 
 .dropdown_menu{
     position: absolute;
-    bottom: -178px;
+    bottom: -167px;
     left: -56px;
     display: none;
     flex-direction: column;
@@ -296,16 +296,21 @@ header{
     min-height: 143px;
     margin-right: 0;
     padding-top: 45px;
+    z-index: 2;
 }
 
 .dropdown_menu li{
     text-align: left;
-    padding:8px 14px;
     background-color: #edf6ee;
     min-width: 188px;
+    display: flex;
+    align-items: center;
 }
 
 .dropdown_menu a{
+    padding: 8px 14px;
+    min-width: 188px;
+    display: block;
     font-family: 'encode_sans_expandedregular', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -314,11 +319,13 @@ header{
 
 .dropdown_menu li:last-of-type::after{
     background-image: url("../images/arrow_right7.svg");
-    display: inline-flex;
-    width: 6px;
+    display: inline-block;
+    align-items: center;
+    width: 7px;
     height: 10px;
     content: "";
-    margin-left: 87px;
+    right: 14px;
+    position: absolute;
 }
 
 .page_nav li.dropdown:hover ul{
@@ -431,6 +438,7 @@ h1 span{
     display: flex;
     align-items: flex-end;
     position: relative;
+    z-index: 1;
 }
 
 .banner_img img{
@@ -918,4 +926,254 @@ h1 span{
 
 .blog .card_collection a:hover::after {
     background-image: url("../images/arrow_right5.svg");
+}
+
+.joining{
+    margin-bottom: 9px;
+}
+
+.joining .container {
+    max-width: 1200px;
+    min-height: 250px;
+    background: #fbfbfb;
+    display: flex;
+    padding-top: 33px;
+}
+
+.joining article {
+    width: 204px;
+    min-height: 202px;
+    position: relative;
+    margin-right: 61px;
+}
+
+.joining article img{
+    margin-bottom: 15px;
+}
+
+.joining article h3{
+    margin-bottom: 9px;
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+}
+
+.joining article p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+.joining article:first-of-type{
+    margin-left: 39px;
+}
+
+.joining .container article::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 187px;
+    background: rgba(70, 163, 88, 0.1);
+    position: absolute;
+    top: 7px;
+    right: -30px;
+}
+
+.newsletters{
+    max-width: 354px;
+}
+
+.newsletters h3{
+    margin-bottom: 25px;
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+.newsletters p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169%;
+    color: #727272;
+}
+
+.newsletters .joinform{
+    margin-bottom: 25px;
+    display: flex;
+}
+
+#join_email{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    border-radius: 6px 0 0 6px;
+    width: 269px;
+    height: 40px;
+    padding: 12px 11px;
+    border-color: transparent;
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
+}
+
+.joinform .join{
+    border-radius: 0 6px 6px 0;
+    width: 85px;
+    height: 40px;
+    background: #46a358;
+    border-color: transparent;
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+}
+
+.contactinfo .container{
+    max-width: 1200px;
+    min-height: 88px;
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.contactinfo img{
+    width: 150px;
+    height: 34px;
+}
+
+.contactinfo p{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+}
+
+.contactinfo p{
+    display: flex;
+    align-items: center;
+}
+
+.contactinfo .address:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/address.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+}
+
+.contactinfo .email:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/email.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+}
+
+.contactinfo .phone:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/phone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+}
+
+.footer .container{
+    max-width: 1200px;
+    min-height: 236px;
+    background: #fbfbfb;
+    padding: 33px 25px;
+    display: flex;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+    margin-bottom: 7px;
+}
+
+.footer .container div ul{
+    list-style-type: none;
+}
+
+.footer .container ul a{
+    text-decoration: none;
+}
+
+.footer .container div{
+    margin-right: 156px;
+}
+
+.footer .container ul a{
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+}
+
+.footer .container h4{
+    font-family: 'cera_round_pro_demobold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.footer .social_media h4{
+    margin-bottom: 20px;
+}
+
+.footer .social_media ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.footer .social_media ul li{
+    margin-right: 10px;
+}
+
+.footer .social_media ul li a img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer .social_media h4:last-of-type{
+    margin-bottom: 13px;
+}
+
+.footer .social_media img{
+    width: 224px;
+    height: 26px;
+}
+
+.footer .footer-text{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 22px;
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
 }
