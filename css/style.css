@@ -565,6 +565,16 @@ h1 span{
     color: #46a358;
 }
 
+.product_choose p span{
+    text-decoration: line-through;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    font-family: 'cera_round_pro_demoregular', sans-serif;
+}
+
 .product_choose img{
     width: 250px;
     height: 250px;
