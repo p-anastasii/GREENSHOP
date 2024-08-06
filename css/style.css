@@ -573,13 +573,47 @@ h1 span{
 
 .action{
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-width: 125px;
+    gap: 27px;
     list-style-type: none;
     position: absolute;
-    bottom: 25px;
+    bottom: 57px;
     left: calc(50% - 63px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product_choose article:hover .action{
+    opacity: 1;
+}
+
+.action .cart::after{
+    content: "";
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/cart1.svg");
+    background-repeat: no-repeat;
+}
+
+.action .heart::after{
+    content: "";
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/heart.svg");
+    background-repeat: no-repeat;
+}
+
+.action .zoom::after{
+    content: "";
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/zoom.svg");
+    background-repeat: no-repeat;
 }
 
 .action li:hover .cart{
