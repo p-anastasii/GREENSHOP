@@ -11,12 +11,12 @@
 
 </head>
 <body>
-<div>
-    <a href="#" class="cross" >
-        <img src="images/X.svg" alt="cross">
-    </a>
-</div>
 <div class="modal">
+    <div>
+        <a href="#" class="cross" >
+            <img src="images/X.svg" alt="cross">
+        </a>
+    </div>
     <div class="title">
         <a href="#" title="Login">Login</a>
         <span> | </span>
@@ -36,9 +36,10 @@
             <label for="user_email"></label>
             <input name="email" type="email" placeholder="Enter your email address" id="user_email" required>
         </div>
-        <div>
+        <div class="password_container">
             <label for="user_password"></label>
             <input name="password" type="password" placeholder="Password" id="user_password">
+            <span class="hide"></span>
         </div>
         <div>
             <label for="user_password_confirmation"></label>
@@ -54,7 +55,6 @@
                 <img src="images/google.svg" alt="google">
                 Continue with Google
             </a>
-
             <a href="https://www.facebook.com/login" class="social_media_link" target="_blank">
                 <img src="images/facebook.svg" alt="facebook">
                 Continue with Facebook
