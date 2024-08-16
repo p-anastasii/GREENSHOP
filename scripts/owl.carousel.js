@@ -1,3 +1,6 @@
+
+
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -183,6 +186,8 @@
 	 * Default options for the carousel.
 	 * @public
 	 */
+
+
 	Owl.Defaults = {
 		items: 3,
 		loop: false,

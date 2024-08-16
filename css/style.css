@@ -71,6 +71,7 @@
     font-style: normal;
 }
 
+
 *{
     padding: 0;
     margin: 0;
@@ -512,6 +513,7 @@ header .container{
 
 .banner_content{
     padding-top: 68px;
+    max-width: 557px;
 }
 
 .banner_content h2{
@@ -1197,6 +1199,10 @@ h1 span{
     align-items: center;
 }
 
+.contactinfo .address {
+    white-space: pre-line;
+}
+
 .contactinfo .address:before{
     content: "";
     display: inline-block;
@@ -1307,4 +1313,34 @@ h1 span{
     font-size: 14px;
     line-height: 214%;
     color: #3d3d3d;
+}
+
+.ui-accordion .ui-accordion-header{
+    background-color: transparent;
+    border: solid 2px black;
+    padding: 20px 76px 20px 44px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: start;
+    color: #242424;
+    border-radius: 8px;
+}
+
+.ui-accordion .ui-accordion-content{
+    background-color: #f6f6f6;
+    border-radius: 0 0 8px 8px;
+    border: solid 2px black;
+    border-top: none;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active{
+    background-color: #f6f6f6;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.nav-but-wrap{
+    display: none;
 }

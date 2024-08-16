@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mob_menu.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/test.css">
+
 </head>
 <body>
 
@@ -29,54 +36,64 @@
     </div>
 </div>
 
-<header>
-    <div class="container">
+<header class="cd-header">
+    <div class="container header-wrapper">
         <a href="#">
             <img src="images/logo.svg" alt="logo">
         </a>
-        <nav>
-            <ul class="page_nav">
-                <li class="nav">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav">
-                    <a href="#">Shop</a>
-                </li>
-                <li class="dropdown nav">
-                    <a href="#">Plant Care</a>
-                    <ul class="dropdown_menu">
-                        <li>
-                            <a href="#">Drainage</a>
-                        </li>
-                        <li>
-                            <a href="#">Fungicides</a>
-                        </li>
-                        <li>
-                            <a href="#">Fertilizer</a>
-                        </li>
-                        <li>
-                            <a href="#">Priming</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav">
-                    <a href="#">Blogs</a>
-                </li>
-            </ul>
+        <nav class="nav">
+            <div class="nav__content">
+                <ul class="page_nav nav__list">
+                    <li class="nav nav__list-item">
+                        <a href="#" class="hover-target">Home</a>
+                    </li>
+                    <li class="nav nav__list-item">
+                        <a href="#" class="hover-target">Shop</a>
+                    </li>
+                    <li class="dropdown nav nav__list-item">
+                        <a href="#" class="hover-target">Plant Care</a>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="#">Drainage</a>
+                            </li>
+                            <li>
+                                <a href="#">Fungicides</a>
+                            </li>
+                            <li>
+                                <a href="#">Fertilizer</a>
+                            </li>
+                            <li>
+                                <a href="#">Priming</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav nav__list-item">
+                        <a href="#" class="hover-target">Blogs</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
         <a href="Registration.html" class="login_btn">
             Login
         </a>
     </div>
 </header>
+
 <main>
     <section class="banner">
         <div class="main_banner">
             <div class="banner_content">
                 <h2>WELCOME TO GREENSHOP</h2>
-                <h1>LET'S MAKE A<br>BETTER <span>PLANET</span></h1>
+                <h1>LET'S MAKE A BETTER <span>PLANET</span></h1>
                 <p>
-                    We are an online plant shop offering a wide range of cheap and trendy plants. Use<br>our plants to
+                    We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
                     create an unique Urban Jungle. Order your favorite plants!
                 </p>
                 <a href="#" class="btn_shopnow">
@@ -90,10 +107,10 @@
         </div>
     </section>
     <section class="products_section">
-        <div class="products">
+        <div class=" container products">
             <div class="aside_container">
                 <div class="aside_bar">
-                    <a href="#">Categories</a>
+                    <a href="#" class="categories_mob">Categories</a>
                     <ul class="categories">
                         <li>
                             <a href="#">House Plants</a>
@@ -385,6 +402,56 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+                <p>
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+                <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+                <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+                <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                </p>
+                <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                </p>
+            </div>
+        </div>
+    </div>
     <section class="joining">
         <div class="container">
             <article>
@@ -416,7 +483,7 @@
     <section class="contactinfo">
         <div class="container">
             <img src="images/logo.svg" alt="logo">
-            <p class="address">70 West Buckingham Ave.<br>
+            <p class="address">70 West Buckingham Ave.
                 Farmingdale, NY 11735</p>
             <p class="email">contact@greenshop.com</p>
             <p class="phone">+88 01911 717 490</p>
@@ -487,36 +554,40 @@
                 </ul>
             </div>
             <div class="social_media">
-                <h4>Social Media</h4>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/facebook1.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/instagram.svg" alt="instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/twitter.svg" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/linkidin.svg" alt="linkidin">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/youtube.svg" alt="youtube">
-                        </a>
-                    </li>
-                </ul>
-                <h4>We accept</h4>
-                <img src="images/payment.png" alt="payment">
+                <div class="social_media_container">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/facebook1.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/linkidin.svg" alt="linkidin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment">
+                    <h4>We accept</h4>
+                    <img src="images/payment.png" alt="payment">
+                </div>
             </div>
         </div>
         <div class="footer-text">
@@ -530,6 +601,7 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
 <script src="scripts/owl.carousel.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <script src="scripts/scripts.js"></script>
 </body>
 </html>
